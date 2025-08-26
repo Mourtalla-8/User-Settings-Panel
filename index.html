@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Settings Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li class="active">
+                    <div class="svg">
+                        <img src="icons/general.svg" alt="general" class="icon"/>
+                    </div>
+                    <span>General</span>
+                </li>
+                <li>
+                    <div class="svg">
+                        <img src="icons/Profile.svg" alt="profile" class="icon"/>
+                    </div>
+                    <span>Profile</span>
+                </li>
+                <li>
+                    <div class="svg">
+                        <img src="icons/Security.svg" alt="security" class="icon"/>
+                    </div>
+                    <span>Security</span>
+                </li>
+                <li>
+                    <div class="svg">
+                        <img src="icons/Notifications.svg" alt="notifications" class="icon"/>
+                    </div>
+                    <span>Notifications</span>
+                </li>
+                <li>
+                    <div class="svg">
+                        <img src="icons/Subscription.svg" alt="subscription" class="icon"/>
+                    </div>
+                    <span>Subscription</span>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Settings Content -->
+        <main class="settings">
+            <h2>General</h2>
+            <hr>
+
+            <div class="setting-row">
+                <label>Username</label>
+                <div class="editable">
+                    <span>sophie</span>
+                    <button class="edit-btn" aria-label="Edit username">
+                        <img src="icons/edit.svg" alt="edit" />
+                    </button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="setting-row">
+                <label>Email</label>
+                <span class="muted">sophie@ui.live</span>
+            </div>
+            <hr>
+
+
+            <div class="setting-row">
+                <label for="toggle-idea">Enable auto-prompt idea suggestion</label>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-idea" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <hr>
+
+
+            <div class="setting-row">
+                <label for="toggle-video">Auto-play video on Explore</label>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-video" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <hr>
+
+
+            <div class="setting-row">
+                <label for="toggle-publish">Publish to Explore</label>
+                <label class="switch">
+                    <input type="checkbox" id="toggle-publish" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <hr>
+
+            <div class="setting-row">
+                <label for="language-select">Language</label>
+                <div class="custom-select">
+                    <select id="language-select">
+                        <option>Auto detect</option>
+                        <option>English</option>
+                        <option>French</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
